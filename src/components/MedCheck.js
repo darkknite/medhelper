@@ -13,11 +13,7 @@ class Medcheck extends Component {
     		<View style={styles.form}>
     			<Button style={styles.button}>Yes</Button>
     			<Button style={styles.button}>No</Button>
-    		</View>
-    		
-    		
-    		      	
- 	
+    		</View> 	
           </View>
     );
   }
@@ -42,7 +38,8 @@ const styles ={
 	button:{
 		justifyContent: 'center',
 		alignItems: 'center',
-		paddingTop: 70
+		paddingTop: 70,
+		
 
 	}
 }

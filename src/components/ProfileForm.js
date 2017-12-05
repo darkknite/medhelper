@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, Dimensions, TouchableWithoutFeedback} from 'react-native';
-import { H1 } from 'native-base';
+import { H1, Thumbnail} from 'native-base'; 
 import { CardSection, Input, Button } from './common';
 
 var height = Dimensions.get('window').height;
@@ -12,6 +12,13 @@ class ProfileForm extends Component{
 		<View style={{flex: 1}}>
 			
 				<ScrollView style={{ flex: 1, position: 'absolute'}}>
+					 <View>
+					 	<Thumbnail 
+					 		large 
+					 		source={{uri: 'https://secure.gravatar.com/avatar/984805ec0f2415841b9f8fe9b0bc3263'}} 
+					 		style={styles.tn}
+					 	/> 
+					</View>
 					<View style={styles.container}>
 					
 					
@@ -74,7 +81,14 @@ const styles ={
       	justifyContent: 'center',
 		alignItems: 'center',
 		
-	}
+	},
+	tn:{
+		justifyContent: 'center',
+		alignSelf: 'center',
+		padding: 10,
+		
+
+	},
 }
 
 export default ProfileForm;
