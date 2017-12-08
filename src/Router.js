@@ -8,7 +8,7 @@ import Profile from './components/Profile';
 
 const RouterComponent = () => {
 	return (
-		<Router sceneStyle={{ paddingTop: 65}}>			
+		<Router>			
 			<Scene key="main">
 				<Scene 
 					key="medcheck" 
